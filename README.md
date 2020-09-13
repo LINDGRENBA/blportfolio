@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">Professional Portfolio</h1>
 
-<div style="text-align: center">![an image of me](./dist/img/mewinecropped.jpg)</div>
+![an image of me](dist/img/me.jpg)
 
 #### A portfolio website to display my projects and let potential employers get to know me, 09.12.2020
 

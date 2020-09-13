@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Permanent Marker', cursive;
+
+$blue: #227c9d;
+$darkblue: #495876;
+$green: #17c3b2;
+$yellow: #ffcb77;
+$cream: #fef9ef;
+$red: #fe6d73;
+
+
+@mixin transition-ease {
+  transition: all 0.3s ease-in-out;
+}

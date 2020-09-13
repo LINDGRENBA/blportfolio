@@ -1,8 +1,75 @@
 .menu {
   padding-bottom: 10px;
   background-color: #fff;
+  font-size: 18px;
+  padding-bottom: 10px;
 
-  &_name {
-    font-family: $secondary-font;
+  // need &-btn styling here ?
+
+  &-btn__burger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 40px;
+    height: 5px;
+    background-color: $blue;
+    @include transition-ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      width: 40px;
+      height: 5px;
+      background-color: $blue;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      width: 40px;
+      height: 5px;
+      background-color: $blue;
+      @include transition-ease;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 40px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
   }
+
+  &-name {
+    font-family: $secondary-font;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  &-nav {
+    list-style-type: none;
+
+    &__links {
+      text-decoration: none;
+      color: $blue;
+    }
+
+    & li {
+      text-align: center;
+      margin: 15px auto;
+    }
+  }
+}
+
+.menu-btn {
+  
 }
